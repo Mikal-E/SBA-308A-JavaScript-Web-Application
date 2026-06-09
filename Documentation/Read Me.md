@@ -2,6 +2,41 @@
 
 
 
+###### **Project Overview**
+
+
+
+The single page web application is a Team Directory page where an agency's admin can browse the agency's team, search for members, view a member's profile, invite a new member, and update a member's role.
+
+
+
+Initial general plans are to implement the following: 
+
+
+
+* View all team members - get
+* Search team members by name
+* Click a member to view their details - get
+* Add a new team member - post
+* Add a team member to a brief - post
+* Update a team member's role - patch
+
+
+
+3 module files:
+
+
+
+* js/api.js — all fetch calls to DummyJSON
+* js/ui.js — all DOM rendering
+* js/app.js — event listeners and app startup
+
+
+
+###### **Assignment**
+
+###### 
+
 ###### **Introduction**
 
 
