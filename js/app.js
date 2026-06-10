@@ -115,3 +115,34 @@ document.getElementById("profile-close-button").addEventListener("click", () => 
 
     }
 );
+
+// Event Listener For Invite Form Submissions - listen for submit, prevent page from refreshing
+// retrieve values from input fileds, add the new user, and show success message.
+
+document.getElementById("invite-form").addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    const userData = {
+
+        firstName: document.getElementById("first-name").value,
+        lastName: document.getElementById("last-name").value,
+        email: document.getElementById("email").value,
+        company: {title: document.getElementById("job-title").value}
+
+    }
+
+    try {
+
+        await addNewUser(userData);
+        alert("Team member invited successfully!");
+        document.getElementById("invite-modal-container").style.display = "none";
+        document.getElementById("invite-form").reset();
+        
+    } catch (error) {
+
+        alert("Failed to invite team member. Please try again.")
+        
+    }
+    }
+);
