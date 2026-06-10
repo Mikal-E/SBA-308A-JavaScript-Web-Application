@@ -10,7 +10,7 @@ The single page web application is a Team Directory page where an agency's admin
 
 
 
-Initial general plans are to implement the following: 
+Initial general plans are to implement the following:
 
 
 
@@ -29,7 +29,7 @@ Initial general plans are to implement the following:
 
 * js/api.js — all fetch calls to DummyJSON
 * js/ui.js — all DOM rendering
-* js/app.js — event listeners and app startup
+* js/app.js — event listeners and app initialization
 
 
 
