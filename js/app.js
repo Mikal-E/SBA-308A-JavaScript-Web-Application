@@ -6,6 +6,10 @@ import { getUsers, searchUsers, getSingleUser, addNewUser } from "./api.js";
 
 import { renderUsers, renderProfile, showError } from "./ui.js";
 
+// Invite Member Button
+
+
+
 // Async Function To Load All Users For The Team Member Page By Populating The Team Member Container
 
 async function loadUsers() {
@@ -32,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 );
 
-// Event Handler For Search Bar (Input) In Order To Search API & Retrieve Data
+// Event Listener For Search Bar (Input) In Order To Search API & Retrieve Data
 document.getElementById("search-bar").addEventListener("input", async (e) => {
 
     const query = e.target.value.trim();
@@ -58,7 +62,7 @@ document.getElementById("search-bar").addEventListener("input", async (e) => {
     }
 );
 
-// Retrieved Container From DOM & Added Event Handler For A Card Click To Open Profile Modal
+// Retrieved Container From DOM & Added Event Listener For A Card Click To Open Profile Modal
 
 document.getElementById("team-member-container").addEventListener("click", async (e) => {
 
@@ -81,6 +85,33 @@ document.getElementById("team-member-container").addEventListener("click", async
         showError("Failed to load team member profile.");
         
     }
+
+    }
+);
+
+// Event Listener For Invite Member Button To Display The Modal Container
+
+document.getElementById("invite-member-button").addEventListener("click", () => {
+
+    document.getElementById("invite-modal-container").style.display = "flex";
+
+    }
+);
+
+// Event Listener For Invite Close Button To Close Invite Modal Container
+
+document.getElementById("invite-close-button").addEventListener("click", () => {
+
+    document.getElementById("invite-modal-container").style.display = "none";
+
+    }
+);
+
+// Event Listener For Profile Close Button To Close Profile Modal Container
+
+document.getElementById("profile-close-button").addEventListener("click", () => {
+
+    document.getElementById("profile-modal-container").style.display = "none";
 
     }
 );
