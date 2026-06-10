@@ -65,7 +65,7 @@ export function renderProfile(user) {
     <p><span>Email: </span>${user.email}</p>
     <p><span>Phone: </span>${user.phone}</p>
     <p><span>Department: </span>${user.company.department}</p>
-    <p>Company: <span></span>${user.company.name}</p>
+    <p><span>Company: </span>${user.company.name}</p>
 
     </div>
 
