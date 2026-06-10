@@ -1,4 +1,4 @@
-import { getSingleUser } from "./api";
+import { getSingleUser } from "./api.js";
 
 // Populates The Single Team Member Card Element
 
