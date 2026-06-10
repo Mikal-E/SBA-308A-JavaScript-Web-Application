@@ -109,10 +109,20 @@ document.getElementById("invite-close-button").addEventListener("click", () => {
 
 // Event Listener For Profile Close Button To Close Profile Modal Container
 
-document.getElementById("profile-close-button").addEventListener("click", () => {
+// document.getElementById("profile-close-button").addEventListener("click", () => {
 
-    document.getElementById("profile-modal-container").style.display = "none";
+//     document.getElementById("profile-modal-container").style.display = "none";
 
+//     }
+// );
+
+document.getElementById("profile-modal-container").addEventListener("click", (e) => {
+
+    if(e.target.id === "profile-close-button") {
+
+        document.getElementById("profile-modal-container").style.display = "none";
+
+    }
     }
 );
 

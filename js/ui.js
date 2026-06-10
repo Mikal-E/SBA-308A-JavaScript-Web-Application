@@ -55,6 +55,7 @@ export function renderProfile(user) {
     const profile = document.getElementById("profile-container");
     profile.innerHTML = `
     
+    <button id="profile-close-button">Close</button>
     <img src="${user.image}" alt="${user.firstName} ${user.lastName}"/>
     <h2>${user.firstName} ${user.lastName}</h2>
     <p class="profile-title">${user.company.title}</p>
