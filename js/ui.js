@@ -52,7 +52,7 @@ export function showError(message) {
 
 // Populates The Profile Modal With A Team Member's Data
 export function renderProfile(user) {
-
+    console.log("renderProfile running", user);
     const profile = document.getElementById("profile-container");
     profile.innerHTML = `
     
@@ -69,5 +69,6 @@ export function renderProfile(user) {
 
     </div>
 
-    `;  
+    `;
+    console.log("profile element:", profile);
 }
