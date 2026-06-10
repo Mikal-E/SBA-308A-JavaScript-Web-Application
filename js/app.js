@@ -76,9 +76,7 @@ document.getElementById("team-member-container").addEventListener("click", async
     try {
 
         const user = await getSingleUser(id);
-        console.log(user);
         renderProfile(user);
-        console.log("renderProfile called");
 
         document.getElementById("profile-modal-container").style.display = "flex";
         
