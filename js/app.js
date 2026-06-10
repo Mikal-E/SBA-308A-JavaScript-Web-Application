@@ -57,3 +57,30 @@ document.getElementById("search-bar").addEventListener("input", async (e) => {
 
     }
 );
+
+// Retrieved Container From DOM & Added Event Handler For A Card Click To Open Profile Modal
+
+document.getElementById("team-member-container").addEventListener("click", async (e) => {
+
+    const card = e.target.closest(".member-card");
+
+    if (!card)
+    return;
+
+    const id = card.dataset.id;
+
+    try {
+
+        const user = await getSingleUser(id);
+        renderProfile(user);
+
+        document.getElementById("profile-container").style.display = "flex";
+        
+    } catch (error) {
+
+        showError("Failed to load team member profile.");
+        
+    }
+
+    }
+);
