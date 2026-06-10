@@ -92,7 +92,7 @@ document.getElementById("team-member-container").addEventListener("click", async
 // Event Listener For Invite Member Button To Display The Modal Container
 
 document.getElementById("invite-member-button").addEventListener("click", () => {
-
+console.log("invite button click")
     document.getElementById("invite-modal-container").style.display = "flex";
 
     }

@@ -182,7 +182,7 @@ main {
 
 /* Modals */
 
-#profile-modal-container, #invite-modal-cotainer {
+#profile-modal-container, #invite-modal-container {
 
     position: fixed;
     top: 0;
@@ -197,7 +197,7 @@ main {
 
 }
 
-#profile-container {
+#profile-container, #invite-form-container {
 
 background-color: var(--white);
 border-radius: 10px;
@@ -299,14 +299,31 @@ position: relative;
 
 }
 
+#invite-form input {
+
+    width: 100%;
+    padding: 10px 14px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    border: 2px solid var(--border-grey);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.3s ease;
+
+}
+
 #invite-form input:focus {
 
     border-color: var(--burgundy);
 
 }
 
-#submit-invite-button:hover {
+#submit-invite-button {
 
+    width: 100%;
     background-color: var(--burgundy);
     color: var(--white);
     border: 2px solid var(--brand-grey);
@@ -321,7 +338,7 @@ position: relative;
 
 }
 
-#submit-invite:hover {
+#submit-invite-button:hover {
 
     background-color: var(--brand-grey);
     color: var(--burgundy);
