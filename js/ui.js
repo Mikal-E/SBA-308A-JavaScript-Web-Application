@@ -60,7 +60,7 @@ export function renderProfile(user) {
     <h2>${user.firstName} ${user.lastName}</h2>
     <p class="profile-title">${user.company.title}</p>
 
-    <div clas="profile-details">
+    <div class="profile-details">
 
     <p><span>Email: </span>${user.email}</p>
     <p><span>Phone: </span>${user.phone}</p>

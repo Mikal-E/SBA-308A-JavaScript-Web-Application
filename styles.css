@@ -272,6 +272,17 @@ position: relative;
 
 }
 
+.profile-details {
+
+    text-align: left;
+    border-top: 1px solid var(--border-grey);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
 .profile-details p {
 
     font-size: 14px;
